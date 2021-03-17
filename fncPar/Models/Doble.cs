@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
 
-namespace ApiDoble.Models
+namespace fncPar.Models
 {
-    using NUnit.Framework;
-    using System;
-    using System.ComponentModel.DataAnnotations;
-    public class Doble
+    class Doble
     {
         [Key]
         [DataType(DataType.DateTime)]
@@ -16,5 +13,4 @@ namespace ApiDoble.Models
         [Required]
         public int Random { get; set; }
     }
-
 }
